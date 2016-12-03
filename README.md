@@ -1,5 +1,5 @@
 # HBFT
-###A new Bredth First Traversal algorithm for large graphs 
+###A new Bredth First Traversal variation for large graphs 
 
 ## Introduction
 
