@@ -27,15 +27,15 @@ for the SMVP-BFT and H-BFT respectively.
 
 
 gcc -o t HBFT.c 
-./t  morelayers/morelayers500inputs.data morelayers/im.data >> rsults.txt
+./t  tests/gm.txt tests/im.data >> rsults.txt
 
 
 nvcc HBFT.cu helpers.cu -arch=sm_35 -g -G
-./a.out  morelayers/morelayers500inputs.data morelayers/im.data >> rsults.txt
+./a.out  tests/gm.txt tests/im.data >> rsults.txt
 
 
 nvcc HBFTD.cu helpers.cu -arch=sm_35 -Xptxas -dlcm=ca -rdc=true
-./a.out  morelayers/morelayers500inputs.data morelayers/im.data >> rsults.txt
+./a.out  tests/gm.txt tests/im.data >> rsults.txt
 
 ## Contributors
 ####Dinali R. Dabarera, Himesh Karunarathna, Erandika Harshani and Roshan G. Ragel
